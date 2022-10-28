@@ -1,13 +1,13 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-//const img = document.getElementById("img1");
+const img = document.getElementById("img1");
 
 canvas.height = window.innerHeight
 canvas.width = window.innerWidth
 const imgheight = canvas.height/2
 const imgwidth = canvas.width/4
-const img = new Image(imgwidth, imgheight);
-img.src = './assets/test.jpg';
+//const img = new Image(imgwidth, imgheight);
+//img.src = './assets/test.jpg';
 //console.log(img.naturalHeight)
 
 // rows and cols
