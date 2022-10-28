@@ -1,0 +1,12 @@
+* {
+  padding : 0px;
+  margin: 0px;
+}
+
+ #img1 {
+  display: none;
+}
+
+#canvas1 {
+  background-color: yellow;
+}
