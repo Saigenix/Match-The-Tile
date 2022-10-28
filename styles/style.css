@@ -10,3 +10,7 @@
 #canvas1 {
   background-color: yellow;
 }
+#picker{
+  position: relative;
+  z-index: 3;
+}
