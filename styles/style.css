@@ -13,10 +13,11 @@
 }
 #picker{
   position: relative;
-  z-index: 3;
+  /* z-index: 3; */
   background-color: aqua;
   color: blue;
   font-size: medium;
   margin: 5px;
   border-radius: 10px;
+  z-index: -1;
 }
