@@ -8,9 +8,15 @@
 }
 
 #canvas1 {
-  background-color: yellow;
+  /* background-color: yellow; */
+  margin: 5px;
 }
 #picker{
   position: relative;
   z-index: 3;
+  background-color: aqua;
+  color: blue;
+  font-size: medium;
+  margin: 5px;
+  border-radius: 10px;
 }

@@ -180,11 +180,12 @@ canvas.addEventListener('mousedown', (e) => {
 const picker = document.getElementById("picker");
 picker.addEventListener("change",(e) => {
   img.src = URL.createObjectURL(e.target.files[0]);
-  console.log(img.width,img.height)
+  // console.log(img.width,img.height)
   // ctx.clearRect(0, 0, canvas.width, canvas.height);
   // imgheight = img.naturalHeight
   // imgwidth = img.naturalWidth
   alert("Click on screen to see changes! Image should be in 200*200 px!")
+  ctx.drawImage(img,0,350,imgwidth,imgheight);
   init()
   draw()
 })
