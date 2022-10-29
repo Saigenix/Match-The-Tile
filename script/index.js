@@ -21,7 +21,7 @@ const cols = 3;
 // img.style.width = imgwidth
 // img.style.height = imgheight
  //ctx.drawImage(img,0*(imgwidth/cols), 0*(imgheight/rows),img.naturalWidth/cols,img.naturalHeight/rows,0,0,imgwidth/cols,imgheight/rows);
- //ctx.drawImage(img,0,0,imgwidth,imgheight);
+ ctx.drawImage(img,0,250,imgwidth,imgheight);
 
 // game Logic 
 let board = []
@@ -184,7 +184,7 @@ picker.addEventListener("change",(e) => {
   // ctx.clearRect(0, 0, canvas.width, canvas.height);
   // imgheight = img.naturalHeight
   // imgwidth = img.naturalWidth
-  alert("Click on screen to see changes")
+  alert("Click on screen to see changes! Image should be in 200*200 px!")
   init()
   draw()
 })
