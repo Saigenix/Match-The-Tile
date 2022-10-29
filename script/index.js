@@ -119,9 +119,9 @@ if(isSolved(arr)){
 }
 
 function isSolved(arr){
-  for (let i = 0; i < arr.length-1; i++) {
-    console.log(arr[i],tiles[i].index)
-    if(arr[i] !== tiles[i].index){
+  for (let p = 0; p < arr.length-1; p++) {
+    //console.log(arr,tiles,'sai')
+    if(arr[p] !== p){
       return false
     }
   }
