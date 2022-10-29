@@ -113,12 +113,12 @@ ctx.clearRect(0, 0, canvas.width, canvas.height);
 //console.log(board)
 draw();
 grid()
-if(isSloved(arr)){
+if(isSolved(arr)){
   alert("Ohh! hoo You Solved it🙌")
 }
 }
 
-function isSloved(arr){
+function isSolved(arr){
   for (let i = 0; i < arr.length-1; i++) {
     console.log(arr[i],tiles[i].index)
     if(arr[i] !== tiles[i].index){
