@@ -184,7 +184,7 @@ picker.addEventListener("change",(e) => {
   // ctx.clearRect(0, 0, canvas.width, canvas.height);
   // imgheight = img.naturalHeight
   // imgwidth = img.naturalWidth
-  alert("Click on screen to see changes! Image should be in 200*200 px!")
+  alert("Click on screen to see changes! Image should be in 300*300 px!")
   ctx.drawImage(img,0,350,imgwidth,imgheight);
   init()
   draw()
