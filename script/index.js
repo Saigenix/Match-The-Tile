@@ -7,8 +7,8 @@ canvas.width = window.innerWidth
 let imgheight;
 let imgwidth;
 function updateImage(){
-   imgheight = 200
-   imgwidth = 200
+   imgheight = 300
+   imgwidth = 300
 }
 updateImage();
 //const img = new Image(imgwidth, imgheight);
@@ -21,7 +21,7 @@ const cols = 3;
 // img.style.width = imgwidth
 // img.style.height = imgheight
  //ctx.drawImage(img,0*(imgwidth/cols), 0*(imgheight/rows),img.naturalWidth/cols,img.naturalHeight/rows,0,0,imgwidth/cols,imgheight/rows);
- ctx.drawImage(img,0,250,imgwidth,imgheight);
+ ctx.drawImage(img,0,350,imgwidth,imgheight);
 
 // game Logic 
 let board = []
