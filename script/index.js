@@ -4,8 +4,13 @@ const img = document.getElementById("img1");
 
 canvas.height = window.innerHeight
 canvas.width = window.innerWidth
-const imgheight = canvas.height/2
-const imgwidth = canvas.width/4
+let imgheight;
+let imgwidth;
+function updateImage(){
+   imgheight = 200
+   imgwidth = 200
+}
+updateImage();
 //const img = new Image(imgwidth, imgheight);
 //img.src = './assets/test.jpg';
 //console.log(img.naturalHeight)
@@ -13,9 +18,8 @@ const imgwidth = canvas.width/4
 // rows and cols
 const rows = 3;
 const cols = 3;
-// img.style.width=imgwidth
-// img.style.height=imgheight
-
+// img.style.width = imgwidth
+// img.style.height = imgheight
  //ctx.drawImage(img,0*(imgwidth/cols), 0*(imgheight/rows),img.naturalWidth/cols,img.naturalHeight/rows,0,0,imgwidth/cols,imgheight/rows);
  //ctx.drawImage(img,0,0,imgwidth,imgheight);
 
@@ -39,7 +43,7 @@ function init(){
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       let index= j + i * rows
-      //console.log(index)
+     //console.log(index)
      //ctx.drawImage(img,(imgwidth/cols)*i,(imgheight/rows)*j, ((imgwidth)/cols), (imgheight/rows),(imgwidth/rows)*i,(imgheight/cols)*j,imgwidth/cols,imgheight/rows);
      board.push(index);
      let tile = new Tile(index,img,i,j)
@@ -58,6 +62,7 @@ init()
  //console.log(board)
 // show the image
 function draw(){
+  
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       let  index = j + i * rows;
@@ -164,12 +169,8 @@ const getCursorPosition = (canvas, event) => {
         //console.log(i,j)
         move(i,j,board)
       }    
-    }
-    
-  }
-  
-
-  
+    } 
+  } 
 }
 
 canvas.addEventListener('mousedown', (e) => {
@@ -179,7 +180,11 @@ canvas.addEventListener('mousedown', (e) => {
 const picker = document.getElementById("picker");
 picker.addEventListener("change",(e) => {
   img.src = URL.createObjectURL(e.target.files[0]);
-  //console.log(e)
+  console.log(img.width,img.height)
+  // ctx.clearRect(0, 0, canvas.width, canvas.height);
+  // imgheight = img.naturalHeight
+  // imgwidth = img.naturalWidth
+  alert("Click on screen to see changes")
   init()
   draw()
 })
